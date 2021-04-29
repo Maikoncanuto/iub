@@ -3,7 +3,7 @@ package com.github.maikoncanuto.iubspringboot.config;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.web.servlet.config.annotation.ResourceHandlerRegistry;
-import org.springframework.web.servlet.config.annotation.WebMvcConfigurationSupport;
+import org.springframework.web.servlet.config.annotation.WebMvcConfigurerAdapter;
 import springfox.documentation.builders.ApiInfoBuilder;
 import springfox.documentation.builders.PathSelectors;
 import springfox.documentation.spring.web.plugins.Docket;
@@ -14,7 +14,7 @@ import static springfox.documentation.spi.DocumentationType.SWAGGER_2;
 
 @Configuration
 @EnableSwagger2
-public class SwaggerConfig extends WebMvcConfigurationSupport {
+public class SwaggerConfig extends WebMvcConfigurerAdapter {
 
     @Bean
     public Docket api() {
@@ -31,7 +31,7 @@ public class SwaggerConfig extends WebMvcConfigurationSupport {
     }
 
     @Override
-    protected void addResourceHandlers(final ResourceHandlerRegistry registry) {
+    public void addResourceHandlers(final ResourceHandlerRegistry registry) {
         registry.addResourceHandler("swagger-ui.html")
                 .addResourceLocations("classpath:/META-INF/resources/");
 
