@@ -4,7 +4,7 @@ import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
 
 import static java.lang.Boolean.FALSE;
-import static org.apache.logging.log4j.util.Strings.isBlank;
+import static java.util.Objects.isNull;
 
 @Service
 public class PasswordService {
@@ -14,7 +14,7 @@ public class PasswordService {
 
     public Boolean validatePassword(final String password) {
 
-        if (isBlank(password))
+        if (isNull(password))
             return FALSE;
 
         return password.matches(regexPassword);
