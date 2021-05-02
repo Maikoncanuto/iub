@@ -1,9 +1,9 @@
-#Bem-vindo ao Projeto IUB
+# Bem-vindo ao Projeto IUB
 
 Serviço responsável por validar a força da senha informada
 
 
-##Objetivo
+## Objetivo
 Fornecer uma api para validação de senhas com determinados critérios (informados abaixo). 
 
 Critérios: 
@@ -15,7 +15,7 @@ Critérios:
     - Considere como especial os seguintes caracteres: !@#$%^&*()-+
 - Não possuir caracteres repetidos dentro do conjunto
 
-##Solução
+## Solução
 Com intuito de validar a senha com os critérios informados, utilizei uma solução baseada em [Regex](https://pt.wikipedia.org/wiki/Express%C3%A3o_regular), sendo mais performática
 do que o desenvolvimento baseado em código. Dessa forma evitamos bugs nas regras de validação, redução de linhas de código e
 consequentemente deixamos o código da aplicação mais limpo.
