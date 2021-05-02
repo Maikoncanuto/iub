@@ -14,7 +14,7 @@
 	<name>iub-springboot</name>
 
 	<properties>
-		<java.version>16</java.version>
+		<java.version>11</java.version>
 	</properties>
 
 	<dependencies>

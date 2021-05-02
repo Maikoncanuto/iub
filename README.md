@@ -40,14 +40,14 @@ Regex utilizada:
 
 # Ambiente de desenvolvimento
 
-O projeto está utilizando a [JDK 16](https://www.oracle.com/java/technologies/javase-jdk16-downloads.html) (Caso não tenha, pode rodar na JDK 11, alterando a versão do Java no pom.xml). 
+O projeto está utilizando a JDK 11. 
 Existem alguns passos para execução do projeto em ambiente local, necessário que alguns programas estejam corretamente instalados.
 
 Framework/lib | Versão Recomendada | S.O Utilizado
 --- | --- | ---
-[Maven](https://maven.apache.org/download.cgi) | 3.6.3 | Windows
-[JDK](https://www.oracle.com/java/technologies/javase-jdk16-downloads.html) | 16 | Windows
-[Intellij](https://www.jetbrains.com/pt-br/idea/)| - | Windows
+[Maven](https://maven.apache.org/download.cgi) | 3.6.3 | Windows / Linux
+[JDK](https://www.oracle.com/br/java/technologies/javase-jdk11-downloads.html) | 11 | Windows / Linux
+[Intellij](https://www.jetbrains.com/pt-br/idea/)| - | Windows / Linux
 
 ## Execução do projeto
 
@@ -68,7 +68,7 @@ $ cd iub
 Executar o comando do maven para gerar o artefato 
 
 ```shell script
-$ cd mvn clean install
+$ mvn clean install
 ```
 
 ### Passo 4
@@ -84,7 +84,7 @@ Todos os endpoints informados abaixo servem para o microservice
 
 Serviço | URL | Status | Descrição
 --- | --- | --- | ---
-Swagger UI | http://localhost:8080/swagger-ui/#/ | :white_check_mark: | Swagger da aplicação
+Swagger UI | http://localhost:8080/swagger-ui.html#/| :white_check_mark: | Swagger da aplicação
 API-DOCS | http://localhost:8080/v2/api-docs | :white_check_mark: | Api Docs da aplicação
 Endpoint de validação | http://localhost:8080/auth/validate-password | :white_check_mark: | Endpoint de validação de senha
 
