@@ -65,19 +65,13 @@ $ cd iub
 ```
 
 ### Passo 3
-
-```shell script
-$ cd iub-springboot-java
-```
-
-### Passo 4
 Executar o comando do maven para gerar o artefato 
 
 ```shell script
 $ cd mvn clean install
 ```
 
-### Passo 5
+### Passo 4
 Executar a aplicação 
 
 ```shell script
